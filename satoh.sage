@@ -54,7 +54,7 @@ E = EllipticCurve(K, [-13, -7])
 P = E.lift_x(67) 
 P = -P
 
-a =  27*i + 22 
+a =  25*i + 109 
 Pa = recover(a,P)
 
 b = 112*i +22
