@@ -58,6 +58,6 @@ a =  27*i + 22
 Pa = recover(a,P)
 
 b = 112*i +22
-Pb = recover(a,P)
+Pb = recover(b,P)
 
-recover(a,Pb)[0] == recover(b,Pa)[0]
+recover(a,Pb) == recover(b,Pa)
