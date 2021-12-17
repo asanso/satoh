@@ -45,7 +45,6 @@ def recover(v, P):
         return L2
     if _miller_(P,-L2,140) == v:
         return -L2
-
 p =139
 _.<I> = GF(p)[]
 K.<i> = GF(p^2, modulus=I^2+4)
@@ -56,8 +55,8 @@ P = -P
 
 a =  25*i + 109 
 Pa = recover(a,P)
+print("Pa", Pa)
 
-b = 112*i +22
+b = 77*i + 133
 Pb = recover(b,P)
-
-recover(a,Pb) == recover(b,Pa)
+print("Pb", Pb)
